@@ -1,3 +1,5 @@
+
+
 export default function fullStack() {
-    return <h1>FullStack</h1>
+    return <h1 className="text-right">FullStack</h1>
 }
