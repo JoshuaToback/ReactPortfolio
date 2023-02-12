@@ -5,32 +5,21 @@ import FrontEnd from "./pages/frontend";
 import Home from "./pages/home";
 import FullStack from "./pages/fullstack";
 import Contact from "./pages/contact";
+import { Route, Routes } from 'react-router-dom';
 import styles from "./styles.css";
 
 function App() {
-  let Component;
-  switch (window.location.pathname) {
-    case "/":
-      Component = Home;
-      break;
-    case "/frontEnd":
-      Component = FrontEnd;
-      break;
-    case "/backEnd":
-      Component = BackEnd;
-      break;
-    case "/fullStack":
-      Component = FullStack;
-      break;
-    case "/contact":
-      Component = Contact;
-      break;
-  }
   return (
     <>
       <Navbar />
       <div className="container">
-      <Component />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/FrontEnd" element={<FrontEnd />} />
+          <Route path="/BackEnd" element={<BackEnd />} />
+          <Route path="/FullStack" element={<FullStack />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
       </div>
     </>
   );
