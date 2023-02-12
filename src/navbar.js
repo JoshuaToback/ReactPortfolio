@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function navbar() {
-  const path = window.location.pathname;
   return (
     <nav className="nav">
       <a href="/" className="site-title">
