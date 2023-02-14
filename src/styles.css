@@ -20,7 +20,10 @@
 
 body {
   margin: 0;
-  background-color: var(--carolinablue);
+  min-height: 100vh;
+  background-image: linear-gradient(
+    rgba(51, 126, 255, 0.3) 0%,
+    rgba(44, 149, 255, 0.6) 100%)
 }
 
 .container {
@@ -99,6 +102,23 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: inset 0px 0px 8px maroon, 0 0 10px maroon;
 }
 
+.pageTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageTitle h1 {
+  padding: 20px;
+  color: white;
+  background-color: maroon;
+  width: fit-content;
+  border-radius: 20px;
+  font-size: 50px;
+  letter-spacing: .3rem;
+  border: .3rem solid goldenrod;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 /* Home Styles */
 
@@ -110,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 .aboutMe {
   display: flex;
   margin-left: 20px;
-  width: 25%;
+  width: 28%;
   flex-direction: column;
   flex-wrap:wrap;
   background-color: maroon;
@@ -121,6 +141,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .aboutMe h2 {
   color: goldenrod;
+  font-size: 30px;
 }
 
 .aboutMe p {
@@ -128,6 +149,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   text-shadow: 1px 1px rgb(45, 45, 45);
   text-align: left;
+  font-size: 20px;
 }
 
 .headshot{
@@ -148,17 +170,20 @@ h1, h2, h3, h4, h5, h6 {
   background-color: maroon;
   border: .3rem solid goldenrod;
   padding: 10px;
-  width: 35%;
+  width: 30%;
+  height: fit-content;
   flex-wrap: wrap;
 }
 
 .technology h2 {
   color: goldenrod;
+  font-size: 30px;
 }
 
+
 .technology img {
-    width: 100px;
-    height:100px;
+    width: 120px;
+    height:120px;
     margin-right: 10px;
     object-fit: cover;
 }
@@ -169,4 +194,163 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 10px;
   object-fit: cover;
   border-radius: 30%;
+}
+
+/* FullStack Styling */
+
+.FScontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: maroon;
+  border: .3rem solid goldenrod;
+  padding: 10px;
+  color: white;
+}
+
+.FScontainer h2 {
+  font-size: 40px;
+}
+
+.fsInfo {
+  font-size: 30px;
+}
+
+.appTechnology {
+  display: flex;
+  flex-direction: column;
+  width:fit-content;
+}
+
+.appTechnology ul {
+  display: flex;
+}
+
+.appTechnology h2 {
+  color: goldenrod;
+  font-size: 30px;
+}
+
+.appTechnology img {
+    width: 100px;
+    height:100px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+#github {
+  background-color: rgb(88, 172, 255);
+  color: white;
+}
+
+#github:hover {
+  background-color: white;
+  color: rgb(88, 172, 255);
+}
+
+#live {
+  background-color: rgb(112, 0, 132);
+  color: white;
+}
+
+#live:hover {
+  background-color: white;
+  color: rgb(112, 0, 132);
+}
+
+
+.siteButtons a {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  background-color: goldenrod;
+  color: white;
+  font-size: 40px;
+  border-radius: 20px;
+  padding: 7px 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.siteButtons a:hover {
+  background-color: white;
+  color: goldenrod;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.siteButtons a,
+.siteButtons a:hover {
+  text-decoration: none;
+}
+
+
+/* Front End Stylings */
+.dr {
+  padding: 20px;
+}
+
+.dr img {
+  width: auto;
+  height: 300px;
+}
+
+.cq {
+  padding: 20px;
+}
+
+.techImage {
+  margin-top: 20px;
+}
+
+.techImage img {
+  width: auto;
+  height: 300px;
+}
+
+#grid {
+  height: 100vh;
+  transition: 500ms;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  background: white;
+}
+
+:where(.left, .right) {
+  background: goldenrod;
+  transition: 500ms;
+}
+
+:where(.left, .right):hover {
+  background: maroon;
+  color:white;
+}
+
+:where(.left, .right):hover h2{
+  font-size: 40px;
+}
+
+:where(.left, .right):hover img{
+  height: 400px;
+  width: auto;
+}
+
+
+:where(.left, .right):hover h3{
+  font-size: 40px;
+}
+
+:where(.left, .right):hover p{
+  font-size: 25px;
+}
+
+
+
+#grid:has(.left:hover) {
+  grid-template-columns: 2fr 0.5fr;
+}
+
+
+#grid:has(.right:hover) {
+  grid-template-columns: 0.5fr 2fr;
 }

@@ -11,7 +11,9 @@ import mern from "../images/programs/Mern.png";
 export default function home() {
   return (
     <>
-      <h1 className="pageTitle">Full Stack Web Developer</h1>
+      <div className="pageTitle">
+        <h1>Full Stack Web Developer</h1>
+      </div>
       <div className="intro-container">
         <div className="aboutMe">
           <h2>About Me</h2>
@@ -58,6 +60,8 @@ export default function home() {
             <img src={html5} alt="html" />
             <img src={css3} alt="css" />
             <img src={js} alt="js" />
+          </ul>
+          <ul>
             <img src={boot} alt="bootstrap" />
             <img src={nosql} alt="nosql" />
             <img src={mysql} alt="mysql" />
