@@ -4,6 +4,7 @@ import React from "react";
 // import js from "../images/programs/javascript.png";
 import dd from "../images/DD.png";
 import cq from "../images/CodeQuiz.png"
+import wd from "../images/weather.png"
 
 export default function frontEnd() {
     return (
@@ -13,8 +14,25 @@ export default function frontEnd() {
       </div>
         <div id="grid">
             <div className="left">
+                <h2 className="programTitle">Weather Dashboard</h2>
+                <div className="app">
+                    <div className="techImage">
+                        <img src={wd} alt="WeatherDash"></img>
+                    </div>
+                    <div className="techInfo">
+                        <p>Utilizing Day.js, moment.js, localStorage, and the OpenWeatherAPI, this application lets you see the 
+                            current weather, as well the five-day-forecast. </p>
+                    </div>
+
+                    <div className="siteButtons">
+                        <a id="github"href="https://github.com/JoshuaToback/weather-dashboard">Github</a>
+                        <a id="live" href="https://joshuatoback.github.io/weather-dashboard/">Live</a>
+                    </div>
+                </div>
+            </div>
+            <div className="center">
                 <h2 className="programTitle">Drive Destination</h2>
-                <div className="dr">
+                <div className="app">
                     <div className="techImage">
                         <img src={dd} alt="DriveDestination"></img>
                     </div>
@@ -31,7 +49,7 @@ export default function frontEnd() {
 
             <div className="right">
                 <h2 className="programTitle">Code Quiz</h2>
-                <div className="cq">
+                <div className="app">
                     <div className="techImage">
                         <img src={cq} alt="CodeQuiz"></img>
                     </div>

@@ -13,22 +13,24 @@
   /* border: 1px solid red; */
 
   /* Default Font  */
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 
 body {
   margin: 0;
   min-height: 100vh;
   background-image: linear-gradient(
     rgba(51, 126, 255, 0.3) 0%,
-    rgba(44, 149, 255, 0.6) 100%)
+    rgba(44, 149, 255, 0.6) 100%
+  );
 }
 
 .container {
-    margin: 1rem;
-    text-align: center;
+  margin: 1rem;
+  text-align: center;
 }
 
 ul {
@@ -37,14 +39,18 @@ ul {
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto Condensed', sans-serif;
+  color: inherit;
+  text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Condensed", sans-serif;
+}
 
 /* NavBar Stylings */
 .nav {
@@ -62,16 +68,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .nav a:visited {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .navbar {
-    display: flex;
+  display: flex;
 }
 
 .navbar ul {
@@ -91,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar li:active {
-    background-color: #555;
+  background-color: #555;
 }
 
 .navbar li:hover {
@@ -115,16 +121,16 @@ h1, h2, h3, h4, h5, h6 {
   width: fit-content;
   border-radius: 20px;
   font-size: 50px;
-  letter-spacing: .3rem;
-  border: .3rem solid goldenrod;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 0.3rem;
+  border: 0.3rem solid goldenrod;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /* Home Styles */
 
 .intro-container {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .aboutMe {
@@ -132,11 +138,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 20px;
   width: 28%;
   flex-direction: column;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   background-color: maroon;
-  border: .3rem solid goldenrod;
+  border: 0.3rem solid goldenrod;
   padding: 10px;
-
 }
 
 .aboutMe h2 {
@@ -145,14 +150,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .aboutMe p {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
   text-shadow: 1px 1px rgb(45, 45, 45);
   text-align: left;
-  font-size: 20px;
+  font-size: 22px;
+  letter-spacing: 0.1rem;
 }
 
-.headshot{
+.headshot {
   display: inline;
   padding: 0;
   margin: 0;
@@ -168,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   background-color: maroon;
-  border: .3rem solid goldenrod;
+  border: 0.3rem solid goldenrod;
   padding: 10px;
   width: 30%;
   flex-wrap: wrap;
@@ -179,17 +185,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
 }
 
-
 .technology img {
-    width: 120px;
-    height:120px;
-    margin-right: 10px;
-    object-fit: cover;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  object-fit: cover;
 }
 
 #mern {
   width: auto;
-  height: 100px;
+  height: 200px;
   margin-top: 10px;
   object-fit: cover;
   border-radius: 30%;
@@ -202,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
   background-color: maroon;
-  border: .3rem solid goldenrod;
+  border: 0.3rem solid goldenrod;
   padding: 10px;
   color: white;
 }
@@ -218,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
 .appTechnology {
   display: flex;
   flex-direction: column;
-  width:fit-content;
+  width: fit-content;
 }
 
 .appTechnology ul {
@@ -231,10 +236,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .appTechnology img {
-    width: 100px;
-    height:100px;
-    margin-right: 10px;
-    object-fit: cover;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  object-fit: cover;
 }
 
 #github {
@@ -258,7 +263,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
   color: goldenrod;
 }
-
 
 .siteButtons a {
   margin-top: 20px;
@@ -284,95 +288,170 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
-
 /* Front / Back End Stylings */
-.dr {
+.app {
   padding: 20px;
 }
 
-.dr img {
+.app img {
   width: auto;
   height: 300px;
-}
-
-.cq {
-  padding: 20px;
 }
 
 .techImage {
   margin-top: 20px;
 }
 
+.em {
+  padding: 20px;
+}
+
+.em:hover img {
+  height: 400px;
+}
+
 .techImage img {
-  width: auto;
-  height: 300px;
+  width: 450px;
 }
 
-.tb {
+
+.app {
   padding: 20px;
 }
 
-.jate {
-  padding: 20px;
-}
-
-.jate p {
+.app p {
   flex-wrap: wrap;
 }
-
 
 #grid {
   height: 100vh;
   transition: 500ms;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 3px;
   background: white;
 }
 
-:where(.left, .right) {
+:where(.left, .center, .right) {
   background: goldenrod;
   transition: 500ms;
 }
 
-:where(.left, .right):hover {
+:where(.left, .center, .right):hover {
   background: maroon;
-  color:white;
+  color: white;
 }
 
-:where(.left, .right):hover h2{
+:where(.left, .center, .right):hover h2 {
   font-size: 40px;
 }
 
-:where(.left, .right):hover img{
+:where(.left, .center, .right):hover img {
   height: 400px;
   width: auto;
 }
 
-
-:where(.left, .right):hover h3{
+:where(.left, .center, .right):hover h3 {
   font-size: 40px;
 }
 
-:where(.left, .right):hover p{
+:where(.left, .center, .right):hover p {
   font-size: 25px;
 }
 
-
-
 #grid:has(.left:hover) {
-  grid-template-columns: 2fr 0.5fr;
+  grid-template-columns: 2fr 0.5fr 0.5fr;
 }
 
+#grid:has(.center:hover) {
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+}
 
 #grid:has(.right:hover) {
-  grid-template-columns: 0.5fr 2fr;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
 }
 
+/* Contact Styles */
+
+.contactContainer {
+  display: flex;
+  height: fit-content;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.contactBox {
+  background-image: linear-gradient(rgb(0, 2, 106), var(--carolinablue));
+  color: white;
+  padding: 10px;
+  width: 40%;
+  box-shadow: 2px 2px black;
+}
+
+.contactBox p {
+  font-size: 35px;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  padding: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#Resume button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: goldenrod;
+  color: white;
+  font-size: 40px;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#Resume button:hover {
+  background-color: white;
+  color: goldenrod;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Form Styles */
+
+.contactForm {
+  padding: 10px;
+  font-size: 30px;
+}
+.contactForm input {
+  width: 50%;
+  height: 20%;
+  margin: 10px;
+}
+
+.contactForm textarea {
+  width: 50%;
+}
+
+.contactForm button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: maroon;
+  color: white;
+  font-size: 40px;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.contactForm button:hover {
+  background-color: white;
+  color: maroon;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
 
 /* Footer Styles */
 
-.footer{
+.footer {
   width: 100vw;
   height: fit-content;
   display: flex;
@@ -380,7 +459,6 @@ h1, h2, h3, h4, h5, h6 {
   align-items: flex-end;
   background-color: maroon;
 }
-
 
 .footer h2 {
   font-size: 30px;
@@ -399,20 +477,20 @@ h1, h2, h3, h4, h5, h6 {
 }  */
 
 /*content*/
-.footer{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-text-align: center;
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
-.footer p{
+.footer p {
   margin: 10px auto;
   line-height: 28px;
   font-size: 14px;
 }
 /*social -media*/
-.socials{
+.socials {
   list-style: none;
   display: flex;
   align-items: center;
@@ -422,7 +500,7 @@ text-align: center;
   background-color: rgb(241, 241, 241, 0.4);
   border-radius: 30px;
 }
-.socials li{
+.socials li {
   margin: 0 10px;
   padding: 10px;
   display: flex;
@@ -433,14 +511,14 @@ text-align: center;
   background-color: goldenrod;
   border-radius: 40%;
 }
-.socials a{
+.socials a {
   text-decoration: none;
   color: #fff;
   padding: 5px;
   border-radius: 50%;
 }
-.socials a img{
+.socials a img {
   font-size: 1.1rem;
   width: 70px;
-  transition: color .4s ease;
+  transition: color 0.4s ease;
 }
