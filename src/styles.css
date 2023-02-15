@@ -306,8 +306,13 @@ h6 {
   padding: 20px;
 }
 
+.em img {
+  height: 300px;
+  width: auto;
+}
+
 .em:hover img {
-  height: 400px;
+  height: 500px;
 }
 
 .techImage img {
@@ -350,6 +355,7 @@ h6 {
   height: 400px;
   width: auto;
 }
+
 
 :where(.left, .center, .right):hover h3 {
   font-size: 40px;
