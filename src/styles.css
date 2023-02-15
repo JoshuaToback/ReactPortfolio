@@ -171,7 +171,6 @@ h1, h2, h3, h4, h5, h6 {
   border: .3rem solid goldenrod;
   padding: 10px;
   width: 30%;
-  height: fit-content;
   flex-wrap: wrap;
 }
 
@@ -241,6 +240,7 @@ h1, h2, h3, h4, h5, h6 {
 #github {
   background-color: rgb(88, 172, 255);
   color: white;
+  box-shadow: 2px 2px black;
 }
 
 #github:hover {
@@ -251,6 +251,7 @@ h1, h2, h3, h4, h5, h6 {
 #live {
   background-color: goldenrod;
   color: white;
+  box-shadow: 2px 2px black;
 }
 
 #live:hover {
@@ -284,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* Front End Stylings */
+/* Front / Back End Stylings */
 .dr {
   padding: 20px;
 }
@@ -306,6 +307,19 @@ h1, h2, h3, h4, h5, h6 {
   width: auto;
   height: 300px;
 }
+
+.tb {
+  padding: 20px;
+}
+
+.jate {
+  padding: 20px;
+}
+
+.jate p {
+  flex-wrap: wrap;
+}
+
 
 #grid {
   height: 100vh;
@@ -353,4 +367,80 @@ h1, h2, h3, h4, h5, h6 {
 
 #grid:has(.right:hover) {
   grid-template-columns: 0.5fr 2fr;
+}
+
+
+/* Footer Styles */
+
+.footer{
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  text-align: center;
+  align-items: flex-end;
+  background-color: maroon;
+}
+
+
+.footer h2 {
+  font-size: 30px;
+  color: goldenrod;
+}
+
+/* .footer h3 {
+  font-size: 25px;
+  color: goldenrod;
+  text-align: left;
+}
+
+.footer img {
+  width: 150px;
+  height: auto;
+}  */
+
+/*content*/
+.footer{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+.footer p{
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+/*social -media*/
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+  padding: 20px;
+  background-color: rgb(241, 241, 241, 0.4);
+  border-radius: 30px;
+}
+.socials li{
+  margin: 0 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.socials li:hover {
+  background-color: goldenrod;
+  border-radius: 40%;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+}
+.socials a img{
+  font-size: 1.1rem;
+  width: 70px;
+  transition: color .4s ease;
 }
