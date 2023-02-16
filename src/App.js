@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from "./navbar";
 import BackEnd from "./pages/backend";
 import FrontEnd from "./pages/frontend";

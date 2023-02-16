@@ -8,22 +8,22 @@ import boot from "../images/programs/bootstrap-4-logo.png";
 import node from "../images/programs/nodejs.png";
 import ImageSlider from "../imageSlider";
 
-export default function fullStack() {
-    // const [currentIndex, setCurrentIndex] = useState(0)
-  const slides = [
-    { url: "http://localhost:3000/F1.png", title: "FullstacksHome" },
-    { url: "http://localhost:3000/F2.png", title: "FullstacksMenu" },
-    { url: "http://localhost:3000/F3.png", title: "FullstacksCheckOut" },
-    { url: "http://localhost:3000/F4.png", title: "FullstacksConfirm" },
-    { url: "http://localhost:3000/F5.png", title: "FullstacksLS" },
-    { url: "http://localhost:3000/F6.png", title: "FullstacksDB" },
-  ];
+import f1 from "../images/FullStack/F1.png";
+import f2 from "../images/FullStack/F2.png";
+import f3 from "../images/FullStack/F3.png";
+import f4 from "../images/FullStack/F4.png";
+import f5 from "../images/FullStack/F5.png";
+import f6 from "../images/FullStack/F6.png";
 
-//   const descriptions = [
-//     {
-//         text: "Test"
-//     }
-// ];
+export default function fullStack() {
+  // const [currentIndex, setCurrentIndex] = useState(0)
+  const slides = [f1, f2, f3, f4, f5, f6];
+
+  //   const descriptions = [
+  //     {
+  //         text: "Test"
+  //     }
+  // ];
 
   const containerStyles = {
     width: "1000px",
@@ -38,7 +38,7 @@ export default function fullStack() {
       <div className="FScontainer">
         <h2>Fullstacks Cafe</h2>
         <div style={containerStyles}>
-            {/* <ImageDescription descriptions={descriptions} currentIndex={currentIndex} /> */}
+          {/* <ImageDescription descriptions={descriptions} currentIndex={currentIndex} /> */}
           <ImageSlider slides={slides} />
           {/* setCurrentIndex={setCurrentIndex} */}
         </div>

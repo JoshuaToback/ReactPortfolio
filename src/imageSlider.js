@@ -1,65 +1,64 @@
+import React from "react";
 import { useState } from "react";
 
-
 const ImageSlider = ({ slides }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
   const sliderStyles = {
     height: "100%",
-    position: 'relative',
-  }
+    position: "relative",
+  };
   const slideStyles = {
     width: "100%",
-    height: "100%", 
+    height: "100%",
     borderRadius: "10px",
     backgroundPositon: "center",
     backgroundSize: "cover",
-    backgroundImage: `url(${slides[currentIndex].url})`,
+    backgroundImage: slides[currentSlide],
   };
 
   const leftArrowStyles = {
-    position: 'absolute',
-    top: '50%',
-    transform: 'translate(0, -50%)', 
-    left: '32px',
-    fontSize: '45px',
-    color: '#fff',
+    position: "absolute",
+    top: "50%",
+    transform: "translate(0, -50%)",
+    left: "32px",
+    fontSize: "45px",
+    color: "#fff",
     zIndex: 1,
     cursor: "pointer",
-    backgroundColor: 'rgba(0, 0, 0, 0.3)',
-    borderRadius: '20px'
+    backgroundColor: "rgba(0, 0, 0, 0.3)",
+    borderRadius: "20px",
   };
 
   const rightArrowStyles = {
-    position: 'absolute',
-    top: '50%',
-    transform: 'translate(0, -50%)', 
-    right: '32px',
-    fontSize: '45px',
-    color: '#fff',
+    position: "absolute",
+    top: "50%",
+    transform: "translate(0, -50%)",
+    right: "32px",
+    fontSize: "45px",
+    color: "#fff",
     zIndex: 1,
     cursor: "pointer",
-    backgroundColor: 'rgba(0, 0, 0, 0.3)',
-    borderRadius: '20px'
+    backgroundColor: "rgba(0, 0, 0, 0.3)",
+    borderRadius: "20px",
   };
 
-  const goToPrevious = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  }
+  const goToPreviousSlide = () => {
+    setCurrentSlide((currentSlide + slides.length - 1) % slides.length);
+  };
 
-  const goToNext = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  }
+  const goToNextSlide = () => {
+    setCurrentSlide((currentSlide + 1) % slides.length);
+  };
 
   return (
-    <div style={sliderStyles}>
-        <div style={leftArrowStyles} onClick={goToPrevious}>◄</div>
-        <div style={rightArrowStyles} onClick={goToNext}>►</div>
-        <div style={slideStyles}></div>
-     
+    <div style={sliderStyles} className="imageSlider">
+      <button style={leftArrowStyles} onClick={goToPreviousSlide}>
+      ◄
+      </button>
+      <img style={slideStyles} src={slides[currentSlide]} alt="slide" />
+      <button style={rightArrowStyles} onClick={goToNextSlide}>
+      ►
+      </button>
     </div>
   );
 };

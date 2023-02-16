@@ -1,3 +1,4 @@
+import React from "react";
 import tb from "../images/techBlog.png";
 import jate from "../images/JATE.png";
 import em from "../images/Employee.png";
