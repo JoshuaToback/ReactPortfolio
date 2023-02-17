@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const ImageSlider = ({ slides }) => {
+const ImageSlider = ({ slides, descriptions }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderStyles = {
     height: "100%",
@@ -14,6 +14,7 @@ const ImageSlider = ({ slides }) => {
     backgroundPositon: "center",
     backgroundSize: "cover",
     backgroundImage: slides[currentSlide],
+    marginBottom: "10px"
   };
 
   const leftArrowStyles = {
@@ -42,6 +43,12 @@ const ImageSlider = ({ slides }) => {
     borderRadius: "20px",
   };
 
+  const descStyles = {
+    display: "flex",
+    fontSize: "25px",
+    textAlign: "left"
+  }
+
   const goToPreviousSlide = () => {
     setCurrentSlide((currentSlide + slides.length - 1) % slides.length);
   };
@@ -55,6 +62,7 @@ const ImageSlider = ({ slides }) => {
       <button style={leftArrowStyles} onClick={goToPreviousSlide}>
       ◄
       </button>
+      <div style={descStyles}>{descriptions[currentSlide]} </div>
       <img style={slideStyles} src={slides[currentSlide]} alt="slide" />
       <button style={rightArrowStyles} onClick={goToNextSlide}>
       ►

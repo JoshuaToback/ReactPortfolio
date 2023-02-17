@@ -19,16 +19,31 @@ export default function fullStack() {
   // const [currentIndex, setCurrentIndex] = useState(0)
   const slides = [f1, f2, f3, f4, f5, f6];
 
-  //   const descriptions = [
-  //     {
-  //         text: "Test"
-  //     }
-  // ];
+  const descriptions = [
+    <p>
+      The Homepage of Fullstacks Cafe. Includes a slideshow of menu items and a
+      button that starts the order taking process.
+    </p>,
+    <p>
+      An interactive menu that stores selections in localStorage and creates an
+      interactive cart for customers to adjust as they see fit.
+    </p>,
+    <p>
+      A checkout page that can submit your order and store it in the local
+      database.
+    </p>,
+    <p>
+      Once an order is placed, it's stored in DBeaver and can be accessed
+      through the CLI.
+    </p>,
+    <p>Within localStorage, the order is added to the table via MySQL.</p>,
+    <p>Here in DBeaver, the table has been updated with the order details.</p>,
+  ];
 
   const containerStyles = {
     width: "1000px",
     height: "500px",
-    margin: "0 auto",
+    margin: "0 auto"
   };
   return (
     <>
@@ -39,16 +54,8 @@ export default function fullStack() {
         <h2>Fullstacks Cafe</h2>
         <div style={containerStyles}>
           {/* <ImageDescription descriptions={descriptions} currentIndex={currentIndex} /> */}
-          <ImageSlider slides={slides} />
-          {/* setCurrentIndex={setCurrentIndex} */}
+          <ImageSlider slides={slides} descriptions={descriptions} />
         </div>
-        <p className="fsInfo">
-          A full stack, MVC dual application that allows potential customers of
-          a restaraunt to select items from a menu, review and place orders that
-          are stored locally. It also allows employees to access a
-          password-locked CLI that can adjust prices, menu options, and review
-          orders.
-        </p>
         <div className="siteButtons">
           <a id="github" href="https://github.com/JoshuaToback/FullStacks-Cafe">
             Github
@@ -56,6 +63,16 @@ export default function fullStack() {
           <a id="deploy" href="https://fullstackscafe.herokuapp.com/home.html">
             Live
           </a>
+        </div>
+
+        <div>
+        <p className="fsInfo">
+          A full stack, MVC dual application that allows potential customers of
+          a restaraunt to select items from a menu, review and place orders that
+          are stored locally. It also allows employees to access a
+          password-locked CLI that can adjust prices, menu options, and review
+          orders.
+        </p>
         </div>
         <div className="appTechnology">
           <h2>Technologies</h2>
