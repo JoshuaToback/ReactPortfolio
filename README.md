@@ -2,7 +2,7 @@
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
-[![Heroku](https://www.herokucdn.com/deploy/button.svg)](https://joshua-toback-portfolio.herokuapp.com/)
+Deployed Site: ![Site](https://joshuatoback.github.io/ReactPortfolio/)
 
 ## Table of Contents
 
@@ -23,7 +23,7 @@ In this portfolio, you can browse through various projects, each with different 
 
 ## Installation
 
-Simply deploy to Heroku, and you'll see the application in full!
+Check out the deployed application here! ![Site](https://joshuatoback.github.io/ReactPortfolio/)
 
 ## Usage
 
