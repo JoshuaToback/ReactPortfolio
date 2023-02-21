@@ -34,7 +34,7 @@ export default function home() {
             in 2007, I've wanted to be a part of my own website. My love of web
             design stems from wanting the sites that I use personally to be
             refactored and streamlined into something clean and efficient. If I
-            had to describe my programming style in one word, it would be 
+            had to describe my programming style in one word, it would be
             <b>
               <i> thoughtful.</i>
             </b>
@@ -57,16 +57,28 @@ export default function home() {
         <div className="technology">
           <h2>Skills</h2>
           <ul>
-            <img src={html5} alt="html" />
-            <img src={css3} alt="css" />
-            <img src={js} alt="js" />
+            <li>
+              <img src={html5} alt="html" />
+            </li>
+            <li>
+              <img src={css3} alt="css" />
+            </li>
+            <li>
+              <img src={js} alt="js" />
+            </li>
           </ul>
           <ul>
-            <img src={boot} alt="bootstrap" />
-            <img src={nosql} alt="nosql" />
-            <img src={mysql} alt="mysql" />
-            <img id="mern" src={mern} alt="mern" />
+            <li>
+              <img src={boot} alt="bootstrap" />
+            </li>
+            <li>
+              <img src={nosql} alt="nosql" />
+            </li>
+            <li>
+              <img src={mysql} alt="mysql" />
+            </li>
           </ul>
+          <img id="mern" src={mern} alt="mern" />
         </div>
       </div>
     </>

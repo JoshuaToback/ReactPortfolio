@@ -8,7 +8,7 @@ export default function navbar() {
           <CustomLink to="/fullStack">Full Stack</CustomLink>
           <CustomLink to="/frontEnd">Front End</CustomLink>
       </ul>
-      <Link to="/home" className="site-title">
+      <Link to="/" className="site-title">
         Joshua Toback
       </Link>
       <ul className="navbar">
