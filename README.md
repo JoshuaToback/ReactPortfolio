@@ -2,7 +2,7 @@
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
-![Check out the deployed site](https://joshuatoback.github.io/ReactPortfolio/)!
+[Check out the deployed site](https://joshuatoback.github.io/ReactPortfolio/)!
 
 ## Table of Contents
 
@@ -23,7 +23,7 @@ In this portfolio, you can browse through various projects, each with different 
 
 ## Installation
 
-![Check out the deployed site](https://joshuatoback.github.io/ReactPortfolio/)!
+[Check out the deployed site](https://joshuatoback.github.io/ReactPortfolio/)!
 
 ## Usage
 
