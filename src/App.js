@@ -22,11 +22,11 @@ function App() {
       <Navbar />
       <div className="container">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/FrontEnd" element={<FrontEnd />} />
-          <Route path="/BackEnd" element={<BackEnd />} />
-          <Route path="/FullStack" element={<FullStack />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/FrontEnd" element={<FrontEnd />} />
+          <Route exact path="/BackEnd" element={<BackEnd />} />
+          <Route exact path="/FullStack" element={<FullStack />} />
+          <Route exact path="/Contact" element={<Contact />} />
         </Routes>
       </div>
       <footer>
