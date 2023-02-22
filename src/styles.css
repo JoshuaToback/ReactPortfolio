@@ -224,8 +224,9 @@ h6 {
 }
 
 .fsInfo {
-  margin-top: 70px;
+  margin-top: 7rem;
   font-size: 30px;
+  padding: 20px;
 }
 
 .appTechnology {
@@ -270,6 +271,10 @@ h6 {
 #live:hover {
   background-color: white;
   color: goldenrod;
+}
+
+.siteButtons {
+  padding: 20px;
 }
 
 .siteButtons a {
@@ -571,5 +576,68 @@ h6 {
 
   .technology img {  
     width: 100%;
+  }
+
+  .appTechnology {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .appTechnology ul {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .appTechnology img {  
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  main {
+    max-width: 1000px;
+  }
+
+  h1 {
+      margin-bottom: 20px;
+  }
+
+  .nav ul {
+      display: block;
+      line-height: 200%;
+  }
+
+  .banner h2 {
+      float: inline-start;
+      text-align: center;
+  }
+
+  .technology li {
+    width: 100%;
+  }
+
+  .technology img {  
+    width: 100%;
+  }
+
+  .appTechnology {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .appTechnology ul {
+    justify-content: space-between;
+  }
+
+  .appTechnology img {  
+    padding: 10px;
   }
 }

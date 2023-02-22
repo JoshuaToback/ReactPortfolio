@@ -43,7 +43,7 @@ export default function fullStack() {
   const containerStyles = {
     width: "1000px",
     height: "500px",
-    margin: "0 auto"
+    margin: "0 auto",
   };
   return (
     <>
@@ -56,6 +56,38 @@ export default function fullStack() {
           {/* <ImageDescription descriptions={descriptions} currentIndex={currentIndex} /> */}
           <ImageSlider slides={slides} descriptions={descriptions} />
         </div>
+        <div>
+          <p className="fsInfo">
+            A full stack, MVC dual application that allows potential customers
+            of a restaraunt to select items from a menu, review and place orders
+            that are stored locally. It also allows employees to access a
+            password-locked CLI that can adjust prices, menu options, and review
+            orders.
+          </p>
+        </div>
+        <div className="appTechnology">
+          <h2>Technologies</h2>
+          <ul>
+            <li>
+              <img src={html5} alt="html" />
+            </li>
+            <li>
+              <img src={css3} alt="css" />
+            </li>
+            <li>
+              <img src={js} alt="js" />
+            </li>
+            <li>
+              <img src={boot} alt="bootstrap" />
+            </li>
+            <li>
+              <img src={mysql} alt="mysql" />
+            </li>
+            <li>
+              <img src={node} alt="nodeJs" />
+            </li>
+          </ul>
+        </div>
         <div className="siteButtons">
           <a id="github" href="https://github.com/JoshuaToback/FullStacks-Cafe">
             Github
@@ -63,27 +95,6 @@ export default function fullStack() {
           <a id="deploy" href="https://fullstackscafe.herokuapp.com/home.html">
             Live
           </a>
-        </div>
-
-        <div>
-        <p className="fsInfo">
-          A full stack, MVC dual application that allows potential customers of
-          a restaraunt to select items from a menu, review and place orders that
-          are stored locally. It also allows employees to access a
-          password-locked CLI that can adjust prices, menu options, and review
-          orders.
-        </p>
-        </div>
-        <div className="appTechnology">
-          <h2>Technologies</h2>
-          <ul>
-            <img src={html5} alt="html" />
-            <img src={css3} alt="css" />
-            <img src={js} alt="js" />
-            <img src={boot} alt="bootstrap" />
-            <img src={mysql} alt="mysql" />
-            <img src={node} alt="nodeJs" />
-          </ul>
         </div>
       </div>
     </>

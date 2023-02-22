@@ -18,7 +18,7 @@ export default function home() {
         <div className="aboutMe">
           <h2>About Me</h2>
           <p>
-            Hello! My name is{" "}
+            Hello! My name is
             <b>
               <i>Joshua Toback</i>
             </b>
