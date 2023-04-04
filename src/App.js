@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./components/footer.js"
 import Navbar from "./navbar";
 import BackEnd from "./pages/backend";
 import FrontEnd from "./pages/frontend";
@@ -8,9 +9,7 @@ import Contact from "./pages/contact";
 
 
 // import reactImg from "./images/programs/react.png"
-import github from "./images/github.png"
-import linked from "./images/linkedin.png"
-import email from "./images/eMail.png"
+
 
 import { Route, Routes } from "react-router-dom";
 // eslint-disable-next-line
@@ -29,28 +28,7 @@ function App() {
           <Route exact path="/Contact" element={<Contact />} />
         </Routes>
       </div>
-      <footer>
-        <div className="footer">
-          <h2>Developed by Joshua Toback</h2>
-          <ul className="socials">
-            <li>
-              <a href="https://github.com/JoshuaToback">
-                <img className="appIcon" src={github} alt="github"></img>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/joshua-toback/">
-                <img className="appIcon" src={linked} alt="linkedin"></img>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:joshuatobackdev@gmail.com">
-                <img className="appIcon" src={email} alt="email"></img>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
